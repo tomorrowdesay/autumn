@@ -178,7 +178,7 @@ $("#module").on("click", function () {
   if ($(".modal-box").css("opacity") == 0) {
     $(".modal-box").animate(
       {
-        left: "-20%",
+        left: "-50%",
         opacity: 1,
       },
       "slow"
