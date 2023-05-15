@@ -23,12 +23,30 @@ $.ajax({
     console.log(data); //将内容输出在控制台中
     render(musicList[currentIndex]);
     renderMusicList(musicList);
+    
   },
 });
 $.ajax({
   type: "GET",
   url: "./photo.json",
   dataType: "json",
+success: function (data) {
+      photoList = data[currentIndex];
+      console.log(photoList); //将内容输出在控制台中
+      photo_time = photoList.time;
+      photoList_number[0] = photoList.photo_1;
+      photoList_number[1] = photoList.photo_2;
+      photoList_number[2] = photoList.photo_3;
+      photoList_number[3] = photoList.photo_4;
+      photo_gif = photoList.gif;
+      $(".buttom_control").css({ opacity: "1" });
+      $("#prephoto").css("pointer-events", "auto");
+      $("#nextphoto").css("pointer-events", "auto");
+      $("#transferphoto").css({ opacity: "0" });
+      $("#transferphoto").css("pointer-events", "none");
+      $("#image_1").css("pointer-events", "auto");
+      $(".photo_cover img").attr("src", photoList_number[currentIndex_photo]);
+    },
 });
 
 $(".player-warp").mouseenter(function () {
