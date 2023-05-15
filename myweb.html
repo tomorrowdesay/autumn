@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myweb</title>
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./myweb.css" />
+  </head>
+  <body>
+    <!-- 音乐播放器 -->
+    <div class="player-warp">
+      <!-- 歌曲信息卡片 -->
+      <div class="player-info">
+        <div class="info">
+          <div class="name">除了春天 爱情和樱花</div>
+          <div class="singer">卤蛋老师,Superluckyqi</div>
+          <div class="progress">
+            <!-- 进度条 -->
+            <!-- 上面的进度条-时间 -->
+            <div class="music_progress_top">
+              <span class="current-time">00:00</span>
+              <span class="time">03:17</span>
+            </div>
+            <!-- 下面的进度条-直线 -->
+            <div class="music_progress_bar">
+              <div class="music_progress_line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 音乐控制器 两个容器，一个容器放唱片，一个容器放控制按钮-->
+      <div class="player-control">
+        <!-- 封面唱片 -->
+        <div class="cover">
+          <img
+            src="http://p2.music.126.net/EjLqIs5EcmrCCcL7UNPdFA==/109951164328449238.jpg?param=300x300"
+            alt="封面"
+          />
+        </div>
+        <!-- 控制按钮 -->
+        <div class="control">
+          <i id="preButtom" class="fa fa-step-backward"></i>
+          <i id="playButtom" class="fa fa-play"></i>
+          <i id="nextButtom" class="fa fa-step-forward"></i>
+          <i id="module" class="fa fa-reorder"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- 背景 -->
+    <div class="mask_bg"></div>
+
+    <!-- 模态框 -->
+    <div class="modal">
+      <div class="modal-box">
+        <!-- <div class="modal-box-top"></div> -->
+        <div class="modal-wrapper">
+          <ul class="music-list">
+            <!-- <li>
+              <span> 01.除了春天 爱情和樱花-卤蛋老师,Superluckyqi</span>
+              <span class="fa fa-play-circle"></span>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 图片 -->
+    <div class="front_control">
+      <div class="photo_cover">
+        <img id="image_1" src="./2022-5-10/image1.png" alt="" />
+        <div class="chinese">明日</div>
+        <div class="english">tomrrow</div>
+        <div class="buttom_control">
+          <i id="nextphoto" class="fa fa-angle-double-left"></i>
+          <i id="prephoto" class="fa fa-angle-double-right"></i>
+        </div>
+        <div class="transfer_control">
+          <i id="transferphoto" class="fa fa-circle-o"></i>
+        </div>
+      </div>
+    </div>
+    <!-- audio标签，加载音乐 -->
+    <audio src=""></audio>
+    <script src="./jquery.js"></script>
+    <!-- jquery中的ajas函数将music.json中的音乐发送过来 -->
+    <script src="./web.js"></script>
+  </body>
+</html>

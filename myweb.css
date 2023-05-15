@@ -1,0 +1,375 @@
+@font-face {
+  font-family: "chin";
+  src: url("./font/chin/ZhiMangXing-Regular.ttf");
+}
+@font-face {
+  font-family: "eng";
+  src: url("./font/eng/DancingScript-VariableFont_wght.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  /* 弹性布局 */
+  display: flex;
+  /* 水平居中 */
+  justify-content: center;
+  /* 垂直居中 */
+  align-items: center;
+  background-color: #333;
+}
+
+.player-warp {
+  /* 父元素相对定位，子元素绝对定位 */
+  position: relative;
+}
+
+/* 画控制器容器 */
+.player-warp .player-control {
+  width: 360px;
+  height: 50px;
+  /* 上下间距20 左右间距30 */
+  padding: 20px 30px;
+  /* 背景颜色白色 */
+  background-color: #fff;
+  /* 圆角为15px */
+  border-radius: 15px;
+  /* 弹性布局 */
+  display: flex;
+  /* 水平两端对齐 */
+  justify-content: space-between;
+  /* 调增层级 */
+  z-index: 10;
+  margin-top: 620px;
+  margin-left: 300px;
+}
+
+/* 控制图片大小 */
+.player-control .cover {
+  /* 宽高相等 */
+  width: 100px;
+  height: 100px;
+  /* 将图片变成圆的 */
+  border-radius: 50%;
+  background-color: #fff;
+  /* 往上偏移一点 */
+  margin-top: -60px;
+  /* 容器与图片有白边 */
+  padding: 6px;
+  /* 给父元素相对定位，中间的白圈 */
+  position: relative;
+  animation: zhuan 5s infinite linear;
+  /* 旋转为running */
+  animation-play-state: paused;
+}
+
+/* 画中心的小圆圈 */
+.player-control .cover::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+.cover img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* 控制图标格式 */
+.player-control .control {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 控制图标样式  设置i标签*/
+.control i {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 26px;
+  color: #b3b0b0;
+  cursor: pointer;
+  /* 设置过渡效果 */
+  transition: all 0.4s;
+}
+
+/* 给图标加上效果 */
+.control i:hover {
+  border-radius: 6px;
+  background-color: rgba(71, 70, 70, 0.2);
+  color: #fff;
+}
+
+/* 歌曲信息卡片样式 */
+.player-warp .player-info {
+  /* 宽度为85% */
+  width: 360px;
+  height: 60px;
+  position: absolute;
+  top: 115%;
+  /* top: 105%; */
+  /* 水平居中 */
+  left: 50%;
+  /* 内边距 */
+  padding: 10px;
+  transform: translateX(-10%);
+  /* 让音乐卡片的层级在播放器后面 */
+  z-index: -1;
+  /* 设置卡片为一个毛玻璃效果 */
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  /* 弹性布局 */
+  display: flex;
+  /* 居右显示 */
+  justify-content: flex-end;
+  opacity: 0;
+  margin-top: -205px;
+}
+
+.player-info .info {
+  width: 60%;
+  font-size: 10px;
+}
+
+.info .name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.info .singer {
+  color: #757474;
+  line-height: 20px;
+  font-size: 12px;
+}
+.info .music_progress {
+  width: 100%;
+}
+.player-info .music_progress_top {
+  display: flex;
+  justify-content: space-between;
+  color: #f2709b;
+  line-height: 20px;
+}
+.player-info .music_progress_bar {
+  width: 100%;
+  height: 3px;
+  background-color: #cccaca;
+  border-radius: 10px;
+  margin-top: 3px;
+}
+.music_progress_bar .music_progress_line {
+  width: 0%;
+  height: 100%;
+  background-color: #f2709b;
+}
+.mask_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -3;
+  width: 100%;
+  height: 100%;
+  background: url("http://p2.music.126.net/EjLqIs5EcmrCCcL7UNPdFA==/109951164328449238.jpg")
+    no-repeat cover cover;
+  background-size: cover;
+  /* 模糊 */
+  filter: blur(50px);
+  transition: all 1s;
+}
+
+.modal {
+  /* 与页面等高 */
+  width: 130px;
+  height: 35px;
+  background-color: none;
+  /* 固定定位 */
+  position: fixed;
+  margin-top: 600px;
+  right: 400px;
+  display: block;
+  z-index: -1;
+}
+
+.modal .modal-box {
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  /* 设置卡片为一个毛玻璃效果 */
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: absolute;
+  border-radius: 10px;
+  top: 0;
+  left: -150%;
+  overflow-y: scroll;
+  opacity: 0;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-box .modal-box-top {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* 溢出显示滚动条 */
+.modal-box .modal-wrapper {
+  width: 100%;
+  height: calc(100%-40%);
+}
+.modal-wrapper .music-list {
+  list-style: none;
+}
+
+.music_list li {
+  /* padding: 10px 0; */
+  border-bottom: 1px solid rgb(186, 182, 182, 0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.play-circle {
+  font-size: 20px;
+  transition: transform 0.4s;
+  cursor: pointer;
+}
+.play-circle:hover {
+  transform: scale(1.2);
+}
+.playing {
+  color: #f2709b;
+}
+/* 旋转 */
+@keyframes zhuan {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 图片 */
+.front_control {
+  width: 700px;
+  height: 500px;
+  /* 上下间距20 左右间距30 */
+  /* padding: 20px 30px; */
+  /* 背景颜色白色 */
+  background-color: #fff;
+  /* 圆角为15px */
+  border-radius: 15px;
+  /* 弹性布局 */
+  display: flex;
+  /* 水平两端对齐 */
+  justify-content: center;
+  align-items: center;
+  /* 调增层级 */
+  z-index: 10;
+  margin-top: -150px;
+  border-radius: 10px;
+  align-items: flex-end;
+  margin-left: -400px;
+  transform: translate(-150px);
+}
+.front_control .photo_cover {
+  width: 650px;
+  height: 450px;
+  position: relative;
+}
+.photo_cover img {
+  width: 100%;
+  height: 90%;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin-top: -30px;
+}
+
+.photo_cover .chinese {
+  text-align: right;
+  margin-right: -10px;
+  font-size: 25px;
+  font-family: "chin";
+}
+.photo_cover .english {
+  text-align: left;
+  margin-left: -10px;
+  margin-top: 10px;
+  font-size: 25px;
+  font-family: "eng";
+}
+.front_control .buttom_control {
+  width: 100.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.buttom_control i {
+  width: 0px;
+  height: 50px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+  color: #b3b0b0;
+  cursor: pointer;
+  /* 设置过渡效果 */
+  transition: all 0.4s;
+  margin-top: -500px;
+  margin-left: -22px;
+}
+/* 给图标加上效果 */
+.buttom_control i:hover {
+  border-radius: 6px;
+  background-color: rgba(71, 70, 70, 0.2);
+  color: #fff;
+}
+.front_control .transfer_control {
+  width: 100.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.transfer_control i {
+  width: 0px;
+  height: 50px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+  color: #b3b0b0;
+  cursor: pointer;
+  /* 设置过渡效果 */
+  transition: all 0.4s;
+  margin-top: -50px;
+  margin-left: 300px;
+  opacity: 0;
+  pointer-events: none;
+}
+/* 给图标加上效果 */
+.transfer_control i:hover {
+  border-radius: 6px;
+  background-color: rgba(71, 70, 70, 0.2);
+  color: #fff;
+}
