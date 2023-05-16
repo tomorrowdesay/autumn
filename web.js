@@ -91,29 +91,6 @@ $("#playButtom").on("click", function () {
   }
   //重新渲染列表数据
   renderMusicList(musicList);
-  // 加载照片列表信息
-  $.ajax({
-    type: "GET",
-    url: "./photo.json",
-    dataType: "json",
-    success: function (data) {
-      photoList = data[currentIndex];
-      console.log(photoList); //将内容输出在控制台中
-      photo_time = photoList.time;
-      photoList_number[0] = photoList.photo_1;
-      photoList_number[1] = photoList.photo_2;
-      photoList_number[2] = photoList.photo_3;
-      photoList_number[3] = photoList.photo_4;
-      photo_gif = photoList.gif;
-      $(".buttom_control").css({ opacity: "1" });
-      $("#prephoto").css("pointer-events", "auto");
-      $("#nextphoto").css("pointer-events", "auto");
-      $("#transferphoto").css({ opacity: "0" });
-      $("#transferphoto").css("pointer-events", "none");
-      $("#image_1").css("pointer-events", "auto");
-      $(".photo_cover img").attr("src", photoList_number[currentIndex_photo]);
-    },
-  });
 });
 
 // 给上一首按钮绑定事件
