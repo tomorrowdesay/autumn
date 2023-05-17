@@ -31,6 +31,7 @@ $.ajax({
   url: "./photo.json",
   dataType: "json",
 success: function (data) {
+  currentIndex_photo = 0
       photoList = data[currentIndex];
       console.log(photoList); //将内容输出在控制台中
       photo_time = photoList.time;
@@ -112,6 +113,7 @@ $("#preButtom").on("click", function () {
     url: "./photo.json",
     dataType: "json",
     success: function (data) {
+      currentIndex_photo = 0
       photoList = data[currentIndex];
       console.log(photoList); //将内容输出在控制台中
       photo_time = photoList.time;
@@ -150,6 +152,7 @@ $("#nextButtom").on("click", function () {
     url: "./photo.json",
     dataType: "json",
     success: function (data) {
+      currentIndex_photo = 0
       photoList = data[currentIndex];
       console.log(photoList); //将内容输出在控制台中
       photo_time = photoList.time;
@@ -230,6 +233,7 @@ $(".music-list").on("click", ".play-circle", function () {
     url: "./photo.json",
     dataType: "json",
     success: function (data) {
+      currentIndex_photo = 0
       photoList = data[currentIndex];
       console.log(photoList); //将内容输出在控制台中
       photo_time = photoList.time;
