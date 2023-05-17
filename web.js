@@ -31,7 +31,7 @@ $.ajax({
   url: "./photo.json",
   dataType: "json",
 success: function (data) {
-  currentIndex_photo = 0
+      currentIndex_photo = 0
       photoList = data[currentIndex];
       console.log(photoList); //将内容输出在控制台中
       photo_time = photoList.time;
