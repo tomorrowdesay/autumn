@@ -10,7 +10,7 @@ var photo_time;
 // 保存音乐列表信息
 var musicList = [];
 // 申明变量，保存当前音乐信息,0就是第一首歌曲
-var currentIndex = 4;
+var currentIndex = 5;
 
 //音乐
 // 1.加载音乐列表信息
