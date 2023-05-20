@@ -43,5 +43,14 @@
     "time": "05:00",
     "number": "2023-5-19",
     "color": "#080685"
+  },
+   {
+    "name": "Lost Stars",
+    "audio_url": "http://music.163.com/song/media/outer/url?id=32102655.mp3",
+    "singer": "Maroon 5",
+    "cover": "https://p3fx.kgimg.com/stdmusic/240/20151216/20151216141911707249.jpg",
+    "time": "04:26",
+    "number": "2023-5-20",
+    "color": "#3532e7"
   }
 ]
