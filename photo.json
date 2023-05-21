@@ -48,4 +48,13 @@
     "photo_4": "https://pic3.zhimg.com/v2-3eb674fd6ae4b49c5c9808db01522646.webp",
     "gif": "./2023-5-20/gif.gif"
   }
+  ,
+  {
+    "time": "2023-5-21",
+    "photo_1": "./2023-5-21/image1.png",
+    "photo_2": "./2023-5-21/image2.png",
+    "photo_3": "./2023-5-21/image3.png",
+    "photo_4": "./2023-5-21/image4.png",
+    "gif": "./2023-5-21/gif.gif"
+  }
 ]
