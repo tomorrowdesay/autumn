@@ -97,5 +97,14 @@
     "time": "02:56",
     "number": "2023-5-25",
     "color": "#06801b"
+  },
+  {
+    "name": "小情歌",
+    "audio_url": "https://webfs.ali.kugou.com/202305261935/2edb85638f3472ecfd9e49eb8ad107db/KGTX/CLTX003/14439dfe0e5defed10586237f1529f72.mp3",
+    "singer":"苏打绿",
+    "cover": "http://p1.music.126.net/GD-kwzxAzYbg6yXEPipoRQ==/109951166552336939.jpg",
+    "time": "04:33",
+    "number": "2023-5-26",
+    "color": "#971fc7"
   }
 ]
