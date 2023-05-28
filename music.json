@@ -115,5 +115,14 @@
     "time": "04:04",
     "number": "2023-5-27",
     "color": "#ffffff"
+  },
+  {
+    "name": "青花瓷",
+    "audio_url": "https://webfs.ali.kugou.com/202305282145/46624e949114abb23a0765b7c3ebd464/part/0/960117/KGTX/CLTX001/clip_37a8f50a9ec3b267c3cc6bec633d9c4a.mp3",
+    "singer":"周杰伦",
+    "cover": "http://p1.music.126.net/TXN1t_p2JGmhex0CZ83Wkw==/109951168226838884.jpg",
+    "time": "03:59",
+    "number": "2023-5-28",
+    "color": "#0d00c4"
   }
 ]
