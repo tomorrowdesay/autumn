@@ -162,12 +162,23 @@
     "color": "#00a1f8"
   },
   {
-    "name": "Joshua Radin",
+    "name": "Beautiful Day",
     "audio_url": "https://m701.music.126.net/20230602222116/7c31bbd79c2c14bd46aafefdc4823cdf/jdyyaac/obj/w5rDlsOJwrLDjj7CmsOj/8697270102/eaa5/44e8/0067/8d9b3d159c3627a509342c891e3ea2cd.m4a",
     "singer":"Joshua Radin",
     "cover": "http://p2.music.126.net/oINmFeX6Iu3PpVw7qxl_QQ==/109951164851161061.jpg",
     "time": "03:32",
     "number": "2023-6-2",
     "color": "#fbb401"
+  }
+  
+  ,
+  {
+    "name": "Talking to the Moon",
+    "audio_url": "https://dl.stream.qqmusic.qq.com/C400003WtZWh2q7itx.m4a?guid=2883978700&vkey=0390D806767757428EDE7D98E72E9B2BEE5295652E93D5766C0FDA6DCA9925C676B9892CDF9EE445A7BF6F0C598C8DE0820AD384C834B498&uin=2371430500&fromtag=120032",
+    "singer":"Bruno Mars",
+    "cover": "http://p2.music.126.net/ZSNq_4FdLRKb0eEic_4Obw==/109951163691583679.jpg",
+    "time": "03:37",
+    "number": "2023-6-2",
+    "color": "#743607"
   }
 ]
