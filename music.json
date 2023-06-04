@@ -169,16 +169,24 @@
     "time": "03:32",
     "number": "2023-6-2",
     "color": "#fbb401"
-  }
-  
-  ,
+  },
   {
     "name": "Talking to the Moon",
     "audio_url": "https://dl.stream.qqmusic.qq.com/C400003WtZWh2q7itx.m4a?guid=2883978700&vkey=0390D806767757428EDE7D98E72E9B2BEE5295652E93D5766C0FDA6DCA9925C676B9892CDF9EE445A7BF6F0C598C8DE0820AD384C834B498&uin=2371430500&fromtag=120032",
     "singer":"Bruno Mars",
     "cover": "http://p2.music.126.net/ZSNq_4FdLRKb0eEic_4Obw==/109951163691583679.jpg",
     "time": "03:37",
-    "number": "2023-6-2",
+    "number": "2023-6-3",
     "color": "#743607"
+  } ,
+  {
+    "name": "虹",
+    "audio_url": "https://dl.stream.qqmusic.qq.com/C400001NS0sK21felt.m4a?guid=6368676284&vkey=3D4AAC5C4DF4443E84F69B73122588DC94DEABD1C011A784B160F11207EBA88DD127D9C5B225CC2BFC913AE007A16EE3F3F1CB2E5355E3BC&uin=2371430500&fromtag=120032",
+    "singer":" 菅田将暉",
+    "cover": "http://p1.music.126.net/xd3nd2r2HmQLS1uR5z1KmQ==/109951165465827053.jpg",
+    "time": "04:18",
+    "number": "2023-64",
+    "color": "#009dff"
   }
+  
 ]
