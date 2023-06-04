@@ -267,7 +267,7 @@ function renderMusicList(list) {
   $.each(list, function (index, item) {
     var $li = $(`
              <li  class = "${index == currentIndex ? "playing" : ""}">
-               <span > ${index < 9 ? "0" + (index + 1) : index}.${
+               <span > ${index < 9 ? "0" + (index + 1) : index+1}.${
       item.number
     }</span>
                <span data-index = "${index}" class="fa ${
