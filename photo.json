@@ -168,5 +168,13 @@
     "photo_3": "./2023-6-4/image3.png",
     "photo_4": "./2023-6-4/image4.png",
     "gif": "./2023-6-4/gif.gif"
+  },
+  {
+    "time": "2023-6-5",
+    "photo_1": "./2023-6-5/image1.png",
+    "photo_2": "./2023-6-5/image2.png",
+    "photo_3": "./2023-6-5/image3.png",
+    "photo_4": "./2023-6-5/image4.png",
+    "gif": "./2023-6-5/gif.gif"
   }
 ]
