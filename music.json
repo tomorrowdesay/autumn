@@ -182,11 +182,20 @@
   {
     "name": "虹",
     "audio_url": "https://dl.stream.qqmusic.qq.com/C400001NS0sK21felt.m4a?guid=6368676284&vkey=3D4AAC5C4DF4443E84F69B73122588DC94DEABD1C011A784B160F11207EBA88DD127D9C5B225CC2BFC913AE007A16EE3F3F1CB2E5355E3BC&uin=2371430500&fromtag=120032",
-    "singer":" 菅田将暉",
+    "singer":"菅田将暉",
     "cover": "http://p1.music.126.net/xd3nd2r2HmQLS1uR5z1KmQ==/109951165465827053.jpg",
     "time": "04:18",
     "number": "2023-6-4",
     "color": "#009dff"
+  },
+  {
+    "name": "Better Than a Fairy Tale",
+    "audio_url": "http://music.163.com/song/media/outer/url?id=1423305.mp3",
+    "singer":"Galen Crew",
+    "cover": "http://p1.music.126.net/seKNyYwlIwwgJGJ0Dt6oPQ==/6668538022666511.jpg",
+    "time": "03:37",
+    "number": "2023-6-5",
+    "color": "#830f0f"
   }
   
 ]
