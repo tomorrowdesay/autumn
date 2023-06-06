@@ -196,6 +196,15 @@
     "time": "03:37",
     "number": "2023-6-5",
     "color": "#830f0f"
+  },
+  {
+    "name": "张三的歌 (Live版)",
+    "audio_url": "http://music.163.com/song/media/outer/url?id=2034187419.mp3",
+    "singer":"陈粒,夏日入侵企画",
+    "cover": "http://p2.music.126.net/7bubYwLjM7Upt5ikF0J8yQ==/109951168502955982.jpg",
+    "time": "03:53",
+    "number": "2023-6-6",
+    "color": "#fd9903"
   }
   
 ]
