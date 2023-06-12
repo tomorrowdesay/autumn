@@ -250,6 +250,15 @@
     "time": "04:08",
     "number": "2023-6-11",
     "color": "#045cff"
+  },
+  {
+    "name": "Bad Day",
+    "audio_url": "http://music.163.com/song/media/outer/url?id=5179550.mp3",
+    "singer":"Daniel Powter",
+    "cover": "http://p1.music.126.net/6a4odsb3WK-c8wDLqeh3VQ==/785051302277320.jpg",
+    "time": "03:53",
+    "number": "2023-6-12",
+    "color": "#515253"
   }
   
 ]
