@@ -259,6 +259,15 @@
     "time": "03:53",
     "number": "2023-6-12",
     "color": "#515253"
+  },
+  {
+    "name": "月光食堂",
+    "audio_url": "http://music.163.com/song/media/outer/url?id=31546854.mp3",
+    "singer":"古川本舗,ちびた",
+    "cover": "http://p2.music.126.net/XiMHWsj4S81vfEoN2VM0tQ==/7827423278861122.jpg",
+    "time": "04:45",
+    "number": "2023-6-13",
+    "color": "#fffb00"
   }
   
 ]
