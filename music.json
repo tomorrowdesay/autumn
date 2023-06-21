@@ -332,5 +332,14 @@
     "number": "2022-6-20",
     "color": "#2de263"
   }
-  
+  ,
+  {
+    "name": "海の見える街",
+    "audio_url": "http://music.163.com/song/media/outer/url?id=578072.mp3",
+    "singer": "広橋真紀子",
+    "cover": "http://p2.music.126.net/EjmtoVVacC8hpP2Tnpeqiw==/109951163338317773.jpg",
+    "time": "04:42",
+    "number": "2022-6-21",
+    "color": "#666867"
+  }
 ]
