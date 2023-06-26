@@ -377,5 +377,14 @@
     "time": "04:31",
     "number": "2022-6-25",
     "color": "#d3210a"
+  },
+  {
+    "name": "New Light",
+    "audio_url": "http://music.163.com/song/media/outer/url?id=2043018009.mp3",
+    "singer": "John Mayer",
+    "cover": "http://p1.music.126.net/VN-z_kdEbCVzpIMmMCZ3eA==/109951167388950907.jpg",
+    "time": "03:36",
+    "number": "2022-6-26",
+    "color": "#ca10f8"
   }
 ]
