@@ -422,5 +422,14 @@
     "time": "03:48",
     "number": "2022-6-30",
     "color": "#5c5b5973"
+  },
+  {
+    "name": "希望の唄",
+    "audio_url": "http://music.163.com/song/media/outer/url?id=32019707.mp3",
+    "singer": "ULTRA TOWER",
+    "cover": "http://p2.music.126.net/tQdtS-YPa6qcNXUzVj2mpw==/18776360069345492.jpg",
+    "time": "04:09",
+    "number": "2022-7-01",
+    "color": "#7e570873"
   }
 ]
