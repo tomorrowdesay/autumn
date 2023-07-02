@@ -431,5 +431,14 @@
     "time": "04:09",
     "number": "2022-7-01",
     "color": "#7e570873"
+  },
+  {
+    "name": "Aphrodite",
+    "audio_url": "http://music.163.com/song/media/outer/url?id=1949072663.mp3",
+    "singer": "椅子乐团 The Chairs",
+    "cover": "http://p2.music.126.net/y_zZfyuY-osbLU_-pP6oCg==/109951167449332833.jpg",
+    "time": "03:53",
+    "number": "2022-7-02",
+    "color": "#0fd0f173"
   }
 ]
