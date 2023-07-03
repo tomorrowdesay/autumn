@@ -392,5 +392,13 @@
     "photo_3": "./2023-7-2/image3.png",
     "photo_4": "./2023-7-2/image4.png",
     "gif": "./2023-7-2/gif.gif"
+  },
+  {
+    "time": "2023-7-3",
+    "photo_1": "./2023-7-3/image1.png",
+    "photo_2": "./2023-7-3/image2.png",
+    "photo_3": "./2023-7-3/image3.png",
+    "photo_4": "./2023-7-3/image4.png",
+    "gif": "./2023-7-3/gif.gif"
   }
 ]
