@@ -494,5 +494,14 @@
     "time": "04:12",
     "number": "2023-7-08",
     "color": "#3ab88ed3"
+  },
+  {
+    "name": "I Wish I Wasn't",
+    "audio_url": "http://music.163.com/song/media/outer/url?id=18948248.mp3",
+    "singer": "Kirk Whalum",
+    "cover": "http://p2.music.126.net/dXyQPyezIIV0DTl8tCqRgQ==/109951164759171289.jpg",
+    "time": "04:48",
+    "number": "2023-7-09",
+    "color": "#c06713d7"
   }
 ]
